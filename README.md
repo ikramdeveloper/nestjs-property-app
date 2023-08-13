@@ -1,3 +1,17 @@
+# NestJS Property Application
+
+> NestJS application with user and property CRUD operations
+
+> Authentication using NestJS Guard & JWT
+
+> Authorization using Interceptor and metadata
+
+> Validation using class-validator & class-transformer packages
+
+> Prisma for database handling
+
+> Globally error filtering
+
 ## Prisma
 
 After installing prisma package, run:
@@ -6,7 +20,15 @@ After installing prisma package, run:
 $ npx prisma init
 ```
 
-Update the .env file and for visual database editor in web, run:
+Update the .env file with proper database url.
+
+After adding models in schema.prisma file, update the models on database:
+
+```bash
+$ npx prisma db push
+```
+
+For visual database editor in web, run:
 
 ```bash
 $ npx prisma studio
